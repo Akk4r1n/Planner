@@ -2,6 +2,7 @@
   display: flex;
   gap: 5px;
   box-sizing: border-box;
+  overflow-x: scroll;
 }
 
 h2 {
@@ -17,13 +18,12 @@ h2 {
   align-items: center;
   flex-direction: column;
   justify-content: center;
-
-  width: 300px;
   display: inline-block;
+  min-width: 200px;
 }
 
 .list {
-  min-height: 600px; 
+  min-height: 90vh; 
   margin-left: 5px;
   margin-right: 5px;
   background: transparent;
@@ -45,6 +45,8 @@ h2 {
   cursor: move;
   background: white;
   font-size: 14px;
+  min-height: 80px;
+  
 }
 
 .cdk-drag-preview {
