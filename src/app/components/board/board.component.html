@@ -1,5 +1,55 @@
-<div class="example-boundary">
-  <div class="example-box" cdkDragBoundary=".example-boundary" cdkDrag>
-    I can only be dragged within the dotted container
+<div class="container">
+
+  <div class="column backlog">
+    <h2>Backlog</h2>
+    <div
+    cdkDropList
+    #backlogList="cdkDropList"
+    [cdkDropListData]="backlog"
+    [cdkDropListConnectedTo]="[todoList, doneList, doingList]"
+    class="list"
+    (cdkDropListDropped)="drop($event)">
+      <div class="item" *ngFor="let item of backlog" cdkDrag>{{item}}</div>
+    </div>
   </div>
+
+  <div class="column todo">
+    <h2>Todo</h2>
+    <div
+    cdkDropList
+    #todoList="cdkDropList"
+    [cdkDropListData]="todo"
+    [cdkDropListConnectedTo]="[backlogList, doingList, doneList]"
+    class="list"
+    (cdkDropListDropped)="drop($event)">
+      <div class="item" *ngFor="let item of todo" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="column doing">
+    <h2>Doing</h2>
+    <div
+    cdkDropList
+    #doingList="cdkDropList"
+    [cdkDropListData]="doing"
+    [cdkDropListConnectedTo]="[backlogList, todoList, doneList]"
+    class="list"
+    (cdkDropListDropped)="drop($event)">
+      <div class="item" *ngFor="let item of doing" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
+  <div class="column done">
+    <h2>Done</h2>
+    <div
+    cdkDropList
+    #doneList="cdkDropList"
+    [cdkDropListData]="done"
+    [cdkDropListConnectedTo]="[backlogList, todoList, doingList]"
+    class="list"
+    (cdkDropListDropped)="drop($event)">
+      <div class="item" *ngFor="let item of done" cdkDrag>{{item}}</div>
+    </div>
+  </div>
+
 </div>
