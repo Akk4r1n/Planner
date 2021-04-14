@@ -42,6 +42,8 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
+// Other
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 const exportedModules = [
   MatAutocompleteModule,
@@ -78,7 +80,8 @@ const exportedModules = [
   MatTooltipModule,
   MatPaginatorModule,
   MatSortModule,
-  MatTableModule
+  MatTableModule,
+  DragDropModule
 ]
 
 @NgModule({
