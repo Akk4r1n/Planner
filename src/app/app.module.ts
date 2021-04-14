@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
+import { BoardComponent } from './components/board/board.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     HomeComponent,
     PagenotfoundComponent,
     SidenavComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    BoardComponent
   ],
   imports: [
     BrowserModule,

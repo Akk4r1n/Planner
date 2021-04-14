@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { BoardComponent } from './components/board/board.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HomeComponent } from './components/home/home.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
@@ -7,6 +8,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "dashboard", component: DashboardComponent },
+  { path: "board", component: BoardComponent},
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", component: PagenotfoundComponent }
 ];
