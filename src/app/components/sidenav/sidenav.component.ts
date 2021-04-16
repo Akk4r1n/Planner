@@ -18,7 +18,6 @@ export class SidenavComponent implements OnInit {
       Breakpoints.HandsetLandscape,
       Breakpoints.HandsetPortrait
     ]).subscribe(result => {
-      console.log(result);
       if (result.matches) {
         this.activateHandsetLayout();
       }

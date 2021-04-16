@@ -11,6 +11,7 @@ import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.co
 import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BoardComponent } from './components/board/board.component';
+import { FileComponent } from './components/file/file.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { BoardComponent } from './components/board/board.component';
     PagenotfoundComponent,
     SidenavComponent,
     ToolbarComponent,
-    BoardComponent
+    BoardComponent,
+    FileComponent
   ],
   imports: [
     BrowserModule,
