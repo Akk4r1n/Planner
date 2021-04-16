@@ -12,6 +12,8 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { BoardComponent } from './components/board/board.component';
 import { FileComponent } from './components/file/file.component';
+import { ProjectviewerComponent } from './components/projectviewer/projectviewer.component';
+import { ProjectcreatorComponent } from './components/projectcreator/projectcreator.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FileComponent } from './components/file/file.component';
     SidenavComponent,
     ToolbarComponent,
     BoardComponent,
-    FileComponent
+    FileComponent,
+    ProjectviewerComponent,
+    ProjectcreatorComponent
   ],
   imports: [
     BrowserModule,

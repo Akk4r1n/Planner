@@ -5,12 +5,14 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FileComponent } from './components/file/file.component';
 import { HomeComponent } from './components/home/home.component';
 import { PagenotfoundComponent } from './components/pagenotfound/pagenotfound.component';
+import { ProjectcreatorComponent } from './components/projectcreator/projectcreator.component';
 
 const routes: Routes = [
   { path: "home", component: HomeComponent },
   { path: "dashboard", component: DashboardComponent },
   { path: "board", component: BoardComponent },
   { path: "file", component: FileComponent },
+  { path: "projectcreator", component: ProjectcreatorComponent },
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "**", component: PagenotfoundComponent }
 ];

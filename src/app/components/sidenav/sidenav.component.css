@@ -41,6 +41,11 @@ a {
   justify-content: center !important;
 }
 
+mat-divider {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .active {
   color:rgb(77, 175, 175);
   font-size: larger;
